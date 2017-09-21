@@ -3,8 +3,8 @@ title: JavaScript Racer
 type: lab
 duration: Weekend
 creator:
-    name: Alex White
-    city: SF
+    name: Jared
+    city: Denver
 --->
 
 # JavaScript Racer
