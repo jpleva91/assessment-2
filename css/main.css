@@ -1,0 +1,93 @@
+body {
+	background: url('../img/background-rick-and-morty.png');
+	background-size: 100%;
+	font-style: 'Helvetica';
+}
+
+.logo {
+	text-align: center;
+}
+
+h1 {
+	font-family: 'Faster One', cursive;
+	color: rgb(77, 232, 246);
+  text-shadow: 2px 3px 1px #024c57;
+	font-size: 60px;
+	position: relative;
+	top: -80px;
+}
+
+.play {
+  position: relative;
+  float: left;
+  background: white;
+  top: -1em;
+  left: -8px;
+  border: none;
+  font-size: 100px;
+	font-weight: bold;
+  padding: 50px;
+  border-radius: 5px;
+}
+
+.play:hover {
+	background: black;
+	color: #ec5fad;
+	text-shadow: 2px 3px 1px white;
+}
+
+.rules {
+	display: block;
+	position: relative;
+	padding: .3em;
+	float: right;
+	top: -7em;
+	width: 22em; 
+	font-size: 18px;
+	font-weight: bold;
+	color: black;
+	background: rgba(255, 255, 30, .6);
+	border-radius: 5px;
+}
+
+ul {
+	list-style: none;
+	padding: 0px 10px;
+}
+
+li {
+  margin: -5px 0px 30px 5px;
+}
+
+li.controls {
+	font-size: 24px;
+	font-weight: 800;
+	text-align: center;
+}
+
+.pitch {
+  background: black;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  height: 36em;
+  width: 78em;
+}
+
+.rick {
+	background: blue;
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	top: 50px;
+	left: 1em;
+}
+
+.morty {
+	background: red;
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	bottom: 50px;
+	left: 1em;
+}
