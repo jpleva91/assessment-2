@@ -75,19 +75,22 @@ li.controls {
 }
 
 .rick {
-	background: blue;
+	background: url(../img/rick.png);
+	background-size: 80px;
 	position: absolute;
-	height: 100px;
-	width: 100px;
+  height: 105px;
+  width: 80px;
 	top: 50px;
 	left: 1em;
 }
 
 .morty {
-	background: red;
+	background: url(../img/morty.png);
+	background-size: 120px;
+	background-position: -20px;
 	position: absolute;
-	height: 100px;
-	width: 100px;
+	height: 105px;
+	width: 80px;
 	bottom: 50px;
 	left: 1em;
 }
