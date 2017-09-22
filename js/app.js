@@ -28,7 +28,7 @@ $(document).ready(function(){
 	console.log("jquery ready");//Checks if JQuery is loaded
 
 // Game Controller //
-	$(document).keydown(function(e){
+	$(document).keyup(function(e){
 		var key = e.type=="keydown";
 
 		if(e.which==82){
