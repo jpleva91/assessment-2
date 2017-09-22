@@ -1,8 +1,8 @@
 console.log("js is loaded!"); //Checks jS is loaded
 
 // Variables //
-let rleft = 1; //Player Rick counter
-let mleft = 1; //Player Morty counter
+var rleft = 0; //Player Rick counter
+var mleft = 0; //Player Morty counter
 
 // Functions // 
 function rickRight(){
@@ -18,8 +18,12 @@ function mortyRight(){
 function checkScore(){
 	if(rleft > 71){
 	alert("Rick Won!");
+	rleft = 0;
+	mleft = 0;
 	} else if (mleft > 71){
 	alert("Morty Won!");
+	rleft = 0;
+	mleft = 0;
 	}
 };//Checks if player has reached end of game pitch and alerts if true
 

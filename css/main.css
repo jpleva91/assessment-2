@@ -8,13 +8,15 @@ body {
 	text-align: center;
 }
 
-h1 {
+h1,
+p {
+	text-align: center;
 	font-family: 'Faster One', cursive;
 	color: rgb(77, 232, 246);
   text-shadow: 2px 3px 1px #024c57;
-	font-size: 60px;
+	font-size: 56px;
 	position: relative;
-	top: -80px;
+	top: 0px;
 }
 
 .play {
@@ -66,7 +68,7 @@ li.controls {
 }
 
 .pitch {
-  background: black;
+  background: rgba(0,0,0,.8);
   position: absolute;
   top: 1em;
   right: 1em;
@@ -80,7 +82,7 @@ li.controls {
 	position: absolute;
   height: 105px;
   width: 80px;
-	top: 50px;
+	top: 160px;
 	left: 1em;
 }
 
@@ -91,6 +93,6 @@ li.controls {
 	position: absolute;
 	height: 105px;
 	width: 80px;
-	bottom: 50px;
+	bottom: 160px;
 	left: 1em;
 }
