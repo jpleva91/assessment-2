@@ -10,26 +10,25 @@ body {
 
 h1,
 p {
-	text-align: center;
-	font-family: 'Faster One', cursive;
 	color: rgb(77, 232, 246);
-  text-shadow: 2px 3px 1px #024c57;
+	font-family: 'Faster One', cursive;	
 	font-size: 56px;
 	position: relative;
-	top: 0px;
+	text-align: center;
+  text-shadow: 2px 3px 1px #024c57;
 }
 
 .play {
-  position: relative;
-  float: left;
-  background: white;
-  top: -1em;
-  left: -8px;
+  background: white; 
   border: none;
-  font-size: 100px;
-	font-weight: bold;
-  padding: 50px;
   border-radius: 5px;
+  float: left;
+  font-size: 100px;
+  font-weight: bold;
+  left: -8px;
+  padding: 50px;
+	position: relative;
+  top: -1em;
 }
 
 .play:hover {
@@ -39,17 +38,17 @@ p {
 }
 
 .rules {
+	color: black;
 	display: block;
 	position: relative;
 	padding: .3em;
 	float: right;
 	top: -7em;
-	width: 22em; 
 	font-size: 18px;
 	font-weight: bold;
-	color: black;
 	background: rgba(255, 255, 30, .6);
-	border-radius: 5px;
+	border-radius: 5px;	
+	width: 22em;
 }
 
 ul {
@@ -70,29 +69,28 @@ li.controls {
 .pitch {
   background: rgba(0,0,0,.8);
   position: absolute;
-  top: 1em;
-  right: 1em;
   height: 36em;
+	right: 1em;
+  top: 1em;
   width: 78em;
 }
 
 .rick {
 	background: url(../img/rick.png);
 	background-size: 80px;
-	position: absolute;
   height: 105px;
-  width: 80px;
+  position: absolute;
 	top: 160px;
-	left: 1em;
+	width: 80px;left: 1em;
 }
 
 .morty {
 	background: url(../img/morty.png);
 	background-size: 120px;
 	background-position: -20px;
-	position: absolute;
-	height: 105px;
-	width: 80px;
 	bottom: 160px;
+	height: 105px;
 	left: 1em;
+	position: absolute;
+	width: 80px;
 }

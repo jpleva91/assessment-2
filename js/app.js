@@ -33,7 +33,7 @@ $(document).ready(function(){
 
 // Game Controller //
 	$(document).keyup(function(e){
-		var key = e.type=="keydown";
+		var key = e.type=="keyup";
 
 		if(e.which==82){
 			rickRight();
