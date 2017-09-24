@@ -1,3 +1,7 @@
+/*
+* === DESKTOP ===
+*/
+
 body {
 	background: url('../img/background-rick-and-morty.png');
 	background-size: 100%;
@@ -22,7 +26,6 @@ p {
   background: white; 
   border: none;
   border-radius: 5px;
-  float: left;
   font-size: 100px;
   font-weight: bold;
   left: -8px;
@@ -103,4 +106,70 @@ li.controls {
 	position: absolute;
 	top: 135px;
 	width: 420px;
+}
+
+/*
+* === TABLET ===
+*/
+
+@media (max-width: 1024px) {
+	
+	/*
+	* - Rick and Morty Logo Resize - 
+	*/
+
+	.logo img {
+		width: 300px;
+	}
+	
+	/*
+	* - "Racer" h1 Disappears - 
+	*/
+
+	h1 {
+		margin-bottom: 150px;
+	}
+
+	.play {
+		left: 30px;
+	}
+	
+	.pitch {
+	  position: absolute;
+    height: 78em;
+    right: 90px;
+    top: 30px;
+    width: 50em;
+	}
+
+	#rick.rick{
+		background: url(../img/rick.png);
+		background-size: 80px;
+	  height: 105px;
+	  left: 10em;
+	  position: absolute;
+		top: 70em;
+		width: 80px;
+	}
+
+	#morty.morty {
+		background: url(../img/morty.png);
+		background-size: 120px;
+		background-position: -20px;
+		bottom: 1em;
+		height: 105px;
+		left: 35em;
+		position: absolute;
+		width: 80px;
+	}
+
+	#monster.attack {
+		background: url(../img/monster.gif);
+		background-size: 420px;
+		height: 300px;
+		position: absolute;
+		top: 135px;
+		width: 420px;
+	}
+
 }
