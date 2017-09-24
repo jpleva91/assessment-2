@@ -10,10 +10,6 @@ var mUp = 70; //Player Morty Tablet counter
 // Functions // 
 
 function monsterAttack(){
-	if(rleft < xleft){
-		alert("Morty Died!");
-		$('.morty').css('display', 'none');
-	}
 	if(rleft + mleft === 56){
 		$('#monster').addClass('attack');
 	}
