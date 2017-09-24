@@ -79,9 +79,10 @@ li.controls {
 	background: url(../img/rick.png);
 	background-size: 80px;
   height: 105px;
+  left: 1em;
   position: absolute;
 	top: 160px;
-	width: 80px;left: 1em;
+	width: 80px;
 }
 
 .morty {
@@ -93,4 +94,13 @@ li.controls {
 	left: 1em;
 	position: absolute;
 	width: 80px;
+}
+
+#monster.attack {
+	background: url(../img/monster.gif);
+	background-size: 420px;
+	height: 300px;
+	position: absolute;
+	top: 135px;
+	width: 420px;
 }
