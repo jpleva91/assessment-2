@@ -72,9 +72,6 @@ $(document).ready(function(){
 // === GAME CONTROLLER ===
 	$(document).keyup(function(e){
 		var key = e.type=="keyup";
-		console.log($('.pitch').width());
-
-		if($('.pitch').width() > 800 ){
 			if(e.which==82){
 				rickRight();
 				checkScore();
@@ -85,15 +82,15 @@ $(document).ready(function(){
 				checkScore();
 				monsterAttack();
 			}
-		} else {
-			if(e.which==82){
-				rickUp();
-				checkScore();
-			}
-			if(e.which==77){
-				mortyUp();
-				checkScore();
-			}
-		}
+// - Rick Mobile Controller - 
+	$('.rick').on('click touchstart', function(){
+		rickUp();
+		checkScore();
 	})
+// - Morty Mobile Controller - 
+	$('.morty').on('click touchstart', function(){
+		mortyUp();
+		checkScore();
+	})
+})
 });
