@@ -83,12 +83,12 @@ $(document).ready(function(){
 				monsterAttack();
 			}
 // - Rick Mobile Controller - 
-	$('.rick').on('click touchstart', function(){
+	$('.rick').on("click touchstart", function(){
 		rickUp();
 		checkScore();
 	})
 // - Morty Mobile Controller - 
-	$('.morty').on('click touchstart', function(){
+	$('.morty').on("click touchstart", function(){
 		mortyUp();
 		checkScore();
 	})
