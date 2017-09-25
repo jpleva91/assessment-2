@@ -1,14 +1,15 @@
-console.log("js is loaded!"); //Checks jS is loaded
+// - Checks jS is loaded -
+console.log("js is loaded!");
 
-// Variables //
-var rleft = 0; //Player Rick counter
-var mleft = 0; //Player Morty counter
-var xleft = 0; //CPU Monster counter
-var rUp = 70; //Player Rick Tablet counter
-var mUp = 70; //Player Morty Tablet counter
+// === Variables ===
+var rleft = 0; // Player Rick counter
+var mleft = 0; // Player Morty counter
+var xleft = 0; // CPU Monster counter
+var rUp = 70; // Player Rick Tablet counter
+var mUp = 70; // Player Morty Tablet counter
 
-// Functions // 
-
+//===  Functions === 
+// Monster Attack in Desktop View
 function monsterAttack(){
 	if(rleft + mleft === 56){
 		$('#monster').addClass('attack');
@@ -25,28 +26,33 @@ function monsterAttack(){
 		$('#monster').css('left', 30+"em");
 		xleft = 30;
 	}
-}//Monster Attack in Desktop View
+}
 
+// - Moves Rick Right in Desktop View -
 function rickRight(){
 	rleft += 1;
 	$('.rick').css('left', rleft+"em");
-};//Moves Rick Right in Desktop View
+};
 
+// - Moves Rick Up in Tablet View -
 function rickUp(){
 	rUp -= 1;
 	$('#rick').css('top', rUp+"em");
-};//Moves Rick Up in Tablet View
+};
 
+// - Moves Morty right -
 function mortyRight(){
 	mleft += 1;
 	$('.morty').css('left', mleft+"em");
-};//Moves Morty right
+};
 
+// - Moves Morty Up in Tablet View -
 function mortyUp(){
 	mUp -= 1;
 	$('#morty').css('top', mUp+"em");
-};//Moves Morty Up in Tablet View
+};
 
+// - Checks if player has reached end of game pitch and alerts if true -
 function checkScore(){
 	if(rleft > 71 || rUp === 0){
 	alert("Rick Won!");
@@ -57,13 +63,13 @@ function checkScore(){
 	rleft = 0;
 	mleft = 0;
 	}
-};//Checks if player has reached end of game pitch and alerts if true
+};
 
-
+// - Checks if JQuery is loaded -
 $(document).ready(function(){
-	console.log("jquery ready");//Checks if JQuery is loaded
+	console.log("jquery ready");
 
-// Game Controller //
+// === GAME CONTROLLER ===
 	$(document).keyup(function(e){
 		var key = e.type=="keyup";
 		console.log($('.pitch').width());

@@ -2,6 +2,9 @@
 * === DESKTOP ===
 */
 
+/*
+* === Splash Page ===
+*/
 body {
 	background: url('../img/background-rick-and-morty.png');
 	background-size: 100%;
@@ -11,7 +14,9 @@ body {
 .logo {
 	text-align: center;
 }
-
+/*
+* - "Racer" and "Pitch instructions" - 
+*/
 h1,
 p {
 	color: rgb(77, 232, 246);
@@ -21,7 +26,9 @@ p {
 	text-align: center;
   text-shadow: 2px 3px 1px #024c57;
 }
-
+/*
+* - Keeps play along left edge of screen - 
+*/
 .play {
   background: white; 
   border: none;
@@ -39,7 +46,9 @@ p {
 	color: #ec5fad;
 	text-shadow: 2px 3px 1px white;
 }
-
+/*
+* - Yellow rules box with Samuel Ipsum - 
+*/
 .rules {
 	color: black;
 	display: block;
@@ -53,7 +62,9 @@ p {
 	border-radius: 5px;	
 	width: 22em;
 }
-
+/*
+* - Removes list styling -
+*/
 ul {
 	list-style: none;
 	padding: 0px 10px;
@@ -62,13 +73,21 @@ ul {
 li {
   margin: -5px 0px 30px 5px;
 }
-
+/*
+* - Press R or M - 
+*/
 li.controls {
 	font-size: 24px;
 	font-weight: 800;
 	text-align: center;
 }
-
+/*
+* === Game Page === 
+*
+*
+*
+* - Game board - 
+*/
 .pitch {
   background: rgba(0,0,0,.8);
   position: absolute;
@@ -77,7 +96,9 @@ li.controls {
   top: 1em;
   width: 78em;
 }
-
+/*
+* - Player Rick - 
+*/
 .rick {
 	background: url(../img/rick.png);
 	background-size: 80px;
@@ -87,7 +108,9 @@ li.controls {
 	top: 160px;
 	width: 80px;
 }
-
+/*
+* - Player Morty -
+*/
 .morty {
 	background: url(../img/morty.png);
 	background-size: 120px;
@@ -98,7 +121,9 @@ li.controls {
 	position: absolute;
 	width: 80px;
 }
-
+/*
+* - Monster Toggle -
+*/
 #monster.attack {
 	background: url(../img/monster.gif);
 	background-size: 420px;
@@ -107,33 +132,25 @@ li.controls {
 	top: 135px;
 	width: 420px;
 }
-
 /*
 * === TABLET ===
 */
-
 @media (max-width: 1024px) {
-	
 	/*
 	* - Rick and Morty Logo Resize - 
 	*/
-
 	.logo img {
 		width: 300px;
 	}
-	
 	/*
 	* - "Racer" h1 Disappears - 
 	*/
-
 	h1 {
 		margin-bottom: 150px;
 	}
-
-	.play {
-		left: 30px;
-	}
-	
+	/*
+	* - Moves pitch to vertical layout -
+	*/
 	.pitch {
 	  position: absolute;
     height: 78em;
@@ -141,35 +158,20 @@ li.controls {
     top: 30px;
     width: 50em;
 	}
-
+	/*
+	* - Mobile Rick controller - 
+	*/
 	#rick.rick{
-		background: url(../img/rick.png);
-		background-size: 80px;
-	  height: 105px;
 	  left: 10em;
 	  position: absolute;
 		top: 70em;
-		width: 80px;
 	}
-
+	/*
+	* - Mobile Morty controller
+	*/
 	#morty.morty {
-		background: url(../img/morty.png);
-		background-size: 120px;
-		background-position: -20px;
 		bottom: 1em;
-		height: 105px;
 		left: 35em;
 		position: absolute;
-		width: 80px;
 	}
-
-	#monster.attack {
-		background: url(../img/monster.gif);
-		background-size: 420px;
-		height: 300px;
-		position: absolute;
-		top: 135px;
-		width: 420px;
-	}
-
 }
