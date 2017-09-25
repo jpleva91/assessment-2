@@ -179,6 +179,7 @@ li.controls {
 	  left: 10em;
 	  position: absolute;
 		top: 70em;
+		cursor: pointer;
 	}
 	
 	/*
@@ -188,5 +189,6 @@ li.controls {
 		bottom: 1em;
 		left: 35em;
 		position: absolute;
+		cursor: pointer;
 	}
 }
